@@ -9,10 +9,30 @@ let numbers = [1, 2, 3, 4, 5];
 //   return doubled;
 // }
 
-let doubledNumbers = (arr) => arr.map((number) => number * 2);
+// let doubledNumbers = (arr) => arr.map((number) => number * 2);
 
 // Call the function with the numbers array
-let result = doubleNumbers(numbers);
+// let result = doubledNumbers(numbers);
 
 // Console log the new array
-console.log(result);
+// console.log(result);
+
+// --- For loop ---
+// Prepare an empty array to store doubled numbers
+let doubled = [];
+
+for (let i = 0; i < numbers.length; i++) {
+  doubled.push(numbers[i] * 2);
+}
+
+console.log(doubled);
+
+// --- forEach loop ---
+// Prepare an empty array to store doubled numbers
+// let doubled = [];
+
+// numbers.forEach((number) => {
+//   doubled.push(number * 2);
+// });
+
+// console.log(doubled);
