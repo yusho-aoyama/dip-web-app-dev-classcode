@@ -18,7 +18,13 @@ const userObject = {
 };
 
 // Deep clone the complexObject three times using the spread operator for shallow cloning
+function deepClone(object) {
+  return JSON.parse(JSON.stringify(object));
+}
 
+const user1 = deepClone(userObject);
+
+console.log(user1);
 // Store the cloned objects in an array
 
 // Sort the array of cloned objects based on the 'age' property in ascending order
